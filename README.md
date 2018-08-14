@@ -74,11 +74,11 @@ server {
 }
 ```
 
-We can set routing to different apps based on the path the user comes from.  Test the following urls and note the difference in behavior.
-http://www.bothofmytotallyawesomeapps.com/1
-http://example.bothofmytotallyawesomeapps.com/1
-http://www.bothofmytotallyawesomeapps.com/2
-http://www.bothofmytotallyawesomeapps.com/reactjs_andsomeotherstuffthatdoesntmatter
+We can set routing to different apps based on the path the user comes from.  Test the following urls and note the difference in behavior  
+http://www.bothofmytotallyawesomeapps.com/1  
+http://example.bothofmytotallyawesomeapps.com/1  
+http://www.bothofmytotallyawesomeapps.com/2  
+http://www.bothofmytotallyawesomeapps.com/reactjs_andsomeotherstuffthatdoesntmatter  
 
 ### Example 3
 #### Writing headers
