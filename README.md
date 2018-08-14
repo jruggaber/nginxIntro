@@ -1,15 +1,18 @@
-# Intro to nginx
+# Intro to NGINX
 ## Setup
-* Install nginx (https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/)
+* Install NGINX (https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/)
 * Copy the materials from `./content` to `/www/nginxIntro`
-* Copy `./conf.d/nginx.sample.conf` to your nginx configs directory
-* Restart nginx (`sudo systemctl restart nginx` || `sudo nginx -s reload`)
+* Copy `./conf.d/nginx.sample.conf` to your NGINX configs directory
+* Restart NGINX (`sudo systemctl restart nginx` || `sudo nginx -s reload`)
 * Add the following to your hosts file
 
     `127.0.0.1 www.totallynotshadyapp.com www.bothofmytotallyawesomeapps.com example.bothofmytotallyawesomeapps.com www.mysecondtotallyawesomeapp.com www.myfirsttotallyawesomeapp.com www.igzip.com www.idontgzip.com`
 
 * Run `yarn start` || `npm start`
-* Open http://127.0.0.1:3456 && http://127.0.0.1:4567 && http://127.0.0.1:5678 and familiarize yourself with their different behaviors.
+* Open the following and familiarize yourself with their different behaviors.
+  - http://127.0.0.1:3456
+  - http://127.0.0.1:4567
+  - http://127.0.0.1:5678
 
 ### Example 1
 #### Routing based on host name
@@ -39,7 +42,10 @@ server {
 }
 ```
 
-http://www.myfirsttotallyawesomeapp.com and http://www.mysecondtotallyawesomeapp.com demonstrate routing to two different running node applications on the same computer over port 80.
+http://www.myfirsttotallyawesomeapp.com
+and
+http://www.mysecondtotallyawesomeapp.com
+demonstrate routing to two different running node applications on the same computer over port 80.
 
 ### Example 2
 #### Routing based on path
