@@ -91,7 +91,7 @@ server {
   # Note that we can rewrite headers on the way out
   location /shady {
     proxy_pass http://127.0.0.1:5678;
-    proxy_set_header  Host www.maybe-a-little-shady.com;
+    proxy_set_header  Host www.maybe_a_little_shady.com;
   }
 
   location / {
